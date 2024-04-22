@@ -19,7 +19,7 @@ public class ZoneScript : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        var Shot0 = gameObject.GetComponent<FireGun>();
+        
         var zombie = other.GetComponent<Zombie>();
         if (zombie != null)
         {

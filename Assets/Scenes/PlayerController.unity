@@ -336,7 +336,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0a2e711a98382545ad7907bb86ffe99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
 --- !u!65 &607738306
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1570,6 +1569,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 368198183099098138, guid: 9a97f830ab57cc04daec64bb054092ab,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 2560299733406362425, guid: 9a97f830ab57cc04daec64bb054092ab,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7967903449062213007, guid: 9a97f830ab57cc04daec64bb054092ab,
         type: 3}
       propertyPath: m_Name
