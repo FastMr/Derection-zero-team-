@@ -6,6 +6,7 @@ public class FireGun : MonoBehaviour
 {
     public Transform BulletPrefab;
     public Transform Point;
+    public Transform Zone;
 
     public float Speed = 10;
     public float Spread = 10;
