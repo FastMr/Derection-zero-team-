@@ -15,11 +15,16 @@ public class ZoneScript : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        
-        
-
-        
+        var Shot0 = gameObject.GetComponent<FireGun>();
+        var zombie = other.GetComponent<Zombie>();
+        if (zombie != null)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                //тут должен вызватся скрипт
+            }
+        }
     }
 }

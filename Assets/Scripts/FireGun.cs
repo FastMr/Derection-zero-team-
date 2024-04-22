@@ -7,11 +7,11 @@ public class FireGun : MonoBehaviour
     public Transform BulletPrefab;
     public Transform Point;
     public Transform Zone;
+    public float fire;
 
     public float Speed = 10;
     public float Spread = 10;
 
-    private float MoveFixedUpdate;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,11 +21,16 @@ public class FireGun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Shot();
         if (Input.GetMouseButtonDown(0))
         {
-           Instantiate(BulletPrefab, Point.position, Point.rotation);
+            
         }
         
     }
-    
+    private void Shot()
+    { 
+        //этот скрипт должен вызватся
+        Instantiate(BulletPrefab, Point.position, Point.rotation);
+    }
 }
