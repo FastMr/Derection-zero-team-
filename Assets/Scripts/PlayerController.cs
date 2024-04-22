@@ -6,18 +6,21 @@ public class PlayerController : MonoBehaviour
 {
     public float inertionMax = 10;
     public float inertionSpeed = 10;
+    public float RotationSpeed = 800;
 
     // Start is called before the first frame update
     private CharacterController _characterController;
     private Vector3 _moveVector;
     private float inertionReal;
     private bool Move;
+    
     void Start()
     {
         _characterController = GetComponent<CharacterController>();
     }
-     void Update()
+    void Update()
     {
+        transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y + RotationSpeed * Input.GetAxis("Mouse X") * Time.deltaTime, 0);
         
         _moveVector = Vector3.zero;
         

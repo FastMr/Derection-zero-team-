@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraRotation : MonoBehaviour
+public class ZoneScript : MonoBehaviour
 {
     // Start is called before the first frame update
-
-    public float RotationSpeed;
     void Start()
     {
         
@@ -15,6 +13,13 @@ public class CameraRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y + RotationSpeed * Input.GetAxis("Mouse X") * Time.deltaTime, 0);
+        
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        
+        
+
+        
     }
 }

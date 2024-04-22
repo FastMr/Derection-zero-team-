@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1721389051755498730}
   - component: {fileID: 209145361730558837}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Zone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 7212257862990761366}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 3.77}
-  m_LocalScale: {x: 2.4226, y: 0.2877, z: 6.017394}
+  m_LocalScale: {x: 1.444354, y: 0.2877, z: 6.017394}
   m_Children: []
   m_Father: {fileID: 7967903449062213012}
   m_RootOrder: 3
@@ -232,7 +232,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7967903449062213007}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b91b1038f9ce5464ba9025bf98a850d5, type: 3}
   m_Name: 
@@ -298,7 +298,7 @@ MonoBehaviour:
   BulletPrefab: {fileID: 4123946484432752925, guid: 5915594a5df76d1459efd764818e49e1,
     type: 3}
   Point: {fileID: 7967903448731796594}
-  Zone: {fileID: 0}
+  Zone: {fileID: 368198183099098138}
   Speed: 10
   Spread: 20
 --- !u!1 &7967903449888213319
