@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class FireGun : MonoBehaviour
 {
     public Transform BulletPrefab;
@@ -28,9 +30,10 @@ public class FireGun : MonoBehaviour
         }
         
     }
-    private void Shot()
-    { 
+    public void Shot()
+    {
         //этот скрипт должен вызватся
+        //ок попробую
         Instantiate(BulletPrefab, Point.position, Point.rotation);
     }
 }

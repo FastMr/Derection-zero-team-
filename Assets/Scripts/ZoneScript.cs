@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class ZoneScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+    FireGun fireGun;
+
     void Start()
     {
-        
+        // Получение ссылки на скрипт
+        fireGun = GetComponent<FireGun>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         
     }
-    private void OnTriggerEnter(Collider other)
+
+    public void OnTriggerEnter(Collider other)
     {
         var Shot0 = gameObject.GetComponent<FireGun>();
         var zombie = other.GetComponent<Zombie>();
@@ -24,6 +26,10 @@ public class ZoneScript : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 //тут должен вызватся скрипт
+                //попробую :)
+
+                // Вызов метода 
+                fireGun.Shot();
             }
         }
     }
