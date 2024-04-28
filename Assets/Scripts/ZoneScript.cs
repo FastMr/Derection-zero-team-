@@ -4,33 +4,35 @@ using UnityEngine;
 
 public class ZoneScript : MonoBehaviour
 {
-    FireGun fireGun;
+    public Transform BulletPrefab;
+    public Transform Point;
+    public float TimeToSpawn = 1;
+
+    private float _timeSpawn;
+    private byte f = 0;
 
     void Start()
     {
-        // Получение ссылки на скрипт
-        fireGun = GetComponent<FireGun>();
+        _timeSpawn = TimeToSpawn;
     }
 
     void Update()
     {
+        if (TimeToSpawn <= 0 && f == 1)
+        {
+            Instantiate(BulletPrefab, Point.position, Point.rotation);
+            TimeToSpawn = _timeSpawn;
+            f = 0;
+        }
+        TimeToSpawn -= Time.deltaTime;
         
     }
-
-    public void OnTriggerEnter(Collider other)
-    {
-        
+    private void OnTriggerStay(Collider other)
+    {  
         var zombie = other.GetComponent<Zombie>();
         if (zombie != null)
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                //тут должен вызватся скрипт
-                //попробую :)
-
-                // Вызов метода 
-                fireGun.Shot();
-            }
+            f = 1; 
         }
     }
 }

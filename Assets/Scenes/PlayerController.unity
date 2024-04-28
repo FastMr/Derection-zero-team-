@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -302,7 +302,6 @@ GameObject:
   - component: {fileID: 607738306}
   - component: {fileID: 607738305}
   - component: {fileID: 607738309}
-  - component: {fileID: 607738310}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Untagged
@@ -418,19 +417,6 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &607738310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 607738303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20dee35ec92ca6846871d0ecd957e8fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value: 100
 --- !u!1 &681750343
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,47 +763,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1057300268 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7967903449062213007, guid: 9a97f830ab57cc04daec64bb054092ab,
-    type: 3}
-  m_PrefabInstance: {fileID: 7967903450248827744}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1057300269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1057300268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc46328c8f135c64da0a2a40f7637ba2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value: 100
-  valueRectTransform: {fileID: 847640421}
-  gamplayUI: {fileID: 396850261}
-  gameOverScreen: {fileID: 1121932286}
 --- !u!4 &1057300277 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7967903449062213012, guid: 9a97f830ab57cc04daec64bb054092ab,
     type: 3}
   m_PrefabInstance: {fileID: 7967903450248827744}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1057300278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1057300268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea155549a334eb94bafabdd9cd97c851, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InventoryOpened: 0
 --- !u!1 &1121932286
 GameObject:
   m_ObjectHideFlags: 0
@@ -1585,7 +1536,7 @@ PrefabInstance:
     - target: {fileID: 368198183099098138, guid: 9a97f830ab57cc04daec64bb054092ab,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.41
+      value: -0.16
       objectReference: {fileID: 0}
     - target: {fileID: 2560299733406362425, guid: 9a97f830ab57cc04daec64bb054092ab,
         type: 3}
