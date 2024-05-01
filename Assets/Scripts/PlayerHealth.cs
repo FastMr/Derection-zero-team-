@@ -33,6 +33,8 @@ public class PlayerHealth : MonoBehaviour
             gamplayUI.SetActive(false);
             gameOverScreen.SetActive(true);
             GetComponent<PlayerController>().enabled = false;
+            GetComponent<FireGun>().enabled = false;
+            GetComponent<Bullet>().enabled = false;
         }
 
         DrawHealthBar();
