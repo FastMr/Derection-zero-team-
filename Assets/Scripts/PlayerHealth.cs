@@ -30,6 +30,8 @@ public class PlayerHealth : MonoBehaviour
         value -= damage;
         if (value <= 0)
         {
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
             gamplayUI.SetActive(false);
             gameOverScreen.SetActive(true);
             GetComponent<PlayerController>().enabled = false;
