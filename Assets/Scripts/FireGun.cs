@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class FireGun : MonoBehaviour
 {
+    public float Bullet = 15;
+    public float Ammo = 30;
+
     public Transform BulletPrefab;
     public Transform Point;
     public float TimeToSpawn = 0.1f;
@@ -27,10 +30,12 @@ public class FireGun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (TimeToSpawn <= 0 && Input.GetMouseButton(0))
+        if (TimeToSpawn <= 0 && Bullet >= 0 && Input.GetMouseButton(0))
         {
             Instantiate(BulletPrefab, Point.position, Point.rotation);
+            Bullet -= 1;
             TimeToSpawn = _timeSpawn;
+            
         }
         TimeToSpawn -= Time.deltaTime;
     }
