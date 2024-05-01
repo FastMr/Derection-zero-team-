@@ -8,6 +8,7 @@ public class ZoneScript : MonoBehaviour
     public Transform Point;
     public float TimeToSpawn = 1;
 
+    private AmmoPluseText ammoPluseText;
     private float _timeSpawn;
     private byte f = 0;
 
@@ -18,14 +19,13 @@ public class ZoneScript : MonoBehaviour
 
     void Update()
     {
-        if (TimeToSpawn <= 0 && f == 1)
-        {
-            Instantiate(BulletPrefab, Point.position, Point.rotation);
-            TimeToSpawn = _timeSpawn;
-            f = 0;
-        }
-        TimeToSpawn -= Time.deltaTime;
-        
+            if (TimeToSpawn <= 0 && f == 1)
+            {
+                Instantiate(BulletPrefab, Point.position, Point.rotation);
+                TimeToSpawn = _timeSpawn;
+                f = 0;
+            }
+            TimeToSpawn -= Time.deltaTime;
     }
     private void OnTriggerStay(Collider other)
     {  
