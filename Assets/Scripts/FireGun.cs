@@ -20,6 +20,8 @@ public class FireGun : MonoBehaviour
     void Start()
     {
         _timeSpawn = TimeToSpawn;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
