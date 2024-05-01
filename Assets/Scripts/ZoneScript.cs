@@ -19,7 +19,7 @@ public class ZoneScript : MonoBehaviour
 
     void Update()
     {
-            if (TimeToSpawn <= 0 && f == 1 && GameObject.FindGameObjectWithTag("AmmoPlus").GetComponent<AmmoPlusText>().AmmoPlus > 0)
+            if (TimeToSpawn <= 0 && f == 1)
             {
                 Instantiate(BulletPrefab, Point.position, Point.rotation);
                 TimeToSpawn = _timeSpawn;
