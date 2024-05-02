@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
-{ 
+{
     public float lifetime = 10;
 
     private float speed;
@@ -14,27 +14,45 @@ public class Bullet : MonoBehaviour
     {
         // Найти объект по имени
         GameObject go = GameObject.Find("Player");
-        // взять его компонент где лежит скорость
+        // Взять его компонент, где лежит скорость
         FireGun fireGun = go.GetComponent<FireGun>();
-        // взять переменную скорости
+        // Взять переменную скорости
         speed = fireGun.Speed;
         spread = fireGun.Spread;
 
         transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y + Random.Range(-spread, spread), 0);
         Invoke("DestroyBullet", lifetime);
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position += transform.forward * speed * Time.fixedDeltaTime;
+        transform.position += transform.forward * speed * Time.deltaTime;
     }
 
     private void DestroyBullet()
     {
         Destroy(gameObject);
     }
-    
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        // Проверить, является ли объект, с которым произошло столкновение, зомби
+        if (collision.gameObject.tag == "Zombie")
+        {
+            // Получить компонент EnemyHealth зомби
+            EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+
+            // Проверить, есть ли у зомби компонент EnemyHealth
+            if (enemyHealth != null)
+            {
+                // Нанести урон зомби
+                enemyHealth.DealDamage(35);
+            }
+
+            // Уничтожить пулю
+            Destroy(gameObject);
+        }
+    }
 }
 
