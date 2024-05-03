@@ -8,6 +8,7 @@ public class Bullet : MonoBehaviour
 
     private float speed;
     private float spread;
+    private Zombie zombie;
 
     // Start is called before the first frame update
     void Start()
@@ -41,13 +42,13 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject.tag == "Zombie")
         {
             // Получить компонент EnemyHealth зомби
-            EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+            Zombie zombie = collision.gameObject.GetComponent<Zombie>();
 
             // Проверить, есть ли у зомби компонент EnemyHealth
-            if (enemyHealth != null)
+            if (zombie != null)
             {
                 // Нанести урон зомби
-                enemyHealth.DealDamage(35);
+                zombie.DealDamage(35);
             }
 
             // Уничтожить пулю

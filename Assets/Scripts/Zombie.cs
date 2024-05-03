@@ -8,8 +8,8 @@ public class Zombie : MonoBehaviour
     NavMeshAgent navMeshAgent;
     private PlayerHealth _playerHealth;
     PlayerController player;
-    public EnemyHealth enemyHealth;
     public float damage = 30;
+    public float value = 100;
 
     // Start is called before the first frame update
     void Start()
@@ -17,11 +17,16 @@ public class Zombie : MonoBehaviour
         navMeshAgent = GetComponent<NavMeshAgent>();
         player = FindObjectOfType<PlayerController>();
         _playerHealth = player.GetComponent<PlayerHealth>();
-        enemyHealth = GetComponent<EnemyHealth>();
     }
-    public bool IsAlive()
+
+    public void DealDamage(float damage)
     {
-        return enemyHealth.IsAlive();
+
+        value -= damage;
+        if (value <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame
