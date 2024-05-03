@@ -281,10 +281,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d40a7509b28bc7f4884dec9bfea5f4d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Bullet: 15
+  Ammo: 30
   BulletPrefab: {fileID: 4123946484432752925, guid: 5915594a5df76d1459efd764818e49e1,
     type: 3}
   Point: {fileID: 7967903448731796594}
-  TimeToSpawn: 1
+  TimeToSpawn: 0.3
   Speed: 10
   Spread: 20
 --- !u!1 &7967903449888213319
