@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public float gravity = 9.8f;
+    private float _fallVelocity = 0;
+
     public float inertionMax = 10;
     public float inertionSpeed = 10;
     public float RotationSpeed = 800;
@@ -53,6 +56,14 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         _characterController.Move(_moveVector * inertionReal * Time.deltaTime);
+
+        _fallVelocity += gravity * Time.fixedDeltaTime;
+        _characterController.Move(Vector3.down * _fallVelocity * Time.fixedDeltaTime);
+
+        if (_characterController.isGrounded)
+        {
+            _fallVelocity = 0;
+        }
     }
     private void InertionSpeed()
     {
