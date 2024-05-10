@@ -27,11 +27,6 @@ public class AmmoText : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-            GameObject go = GameObject.Find("Player");
-            FireGun fireGun = go.GetComponent<FireGun>();
-            ammo = fireGun.Ammo;
-            bullet = fireGun.Bullet;
-
             ammoText.text = ammo.ToString();
             bulletText.text = bullet.ToString();
         }
