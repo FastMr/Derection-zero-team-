@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Zombie
   - Food
+  - Inventory
   layers:
   - Default
   - TransparentFX
