@@ -24,6 +24,7 @@ public class Food : MonoBehaviour
             {
                 // Увеличить голод игрока на 50
                 hunger.Eat(50);
+                Destroy(gameObject);
             }
         }
     }
