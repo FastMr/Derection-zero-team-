@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Food : MonoBehaviour
+public class AidKit : MonoBehaviour
 {
     private void OnTriggerStay(Collider other)
     {
@@ -10,13 +10,13 @@ public class Food : MonoBehaviour
             // Check if the player is holding down the "E" key
             if (Input.GetKey(KeyCode.E))
             {
-                // Get the Hunger script from the player
-                Hunger hunger = other.gameObject.GetComponent<Hunger>();
+                // Get the PlayerHealth script from the player
+                PlayerHealth health = other.gameObject.GetComponent<PlayerHealth>();
 
-                // If the player has a Hunger script, add 50 units of hunger
-                if (hunger != null)
+                // If the player has a PlayerHealth script, add 50 health
+                if (health != null)
                 {
-                    hunger.Eat(50);
+                    health.AddHealth(50);
                     Destroy(gameObject);
                 }
             }
