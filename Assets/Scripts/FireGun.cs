@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class FireGun : MonoBehaviour
 {
     public float BulletMax = 15;
@@ -26,7 +28,7 @@ public class FireGun : MonoBehaviour
     {
         _timeSpawn = RateOfFire;
         Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false; 
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
@@ -38,6 +40,7 @@ public class FireGun : MonoBehaviour
             Instantiate(BulletPrefab, Point.position, Point.rotation);
             Bullet -= 1;
             RateOfFire = _timeSpawn;
+            
         }
         RateOfFire -= Time.deltaTime;
 
