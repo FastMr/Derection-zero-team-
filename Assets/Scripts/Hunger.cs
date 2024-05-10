@@ -2,18 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class Hunger : MonoBehaviour
 {
     public float maxHunger = 100;
-    public float hungerDecreaseRate = 1; // Уменьшение голода каждую секунду
-    public float hungerDamageRate = 1; // Урон каждую секунду
+    public float hungerDecreaseRate = 3; // Уменьшение голода каждую секунду
+    public float hungerDamageRate = 2; // Урон каждую секунду
 
     private float hunger;
-    public TextMeshProUGUI hungerText;
-
-
+    public Text hungerText;
 
     private void Start()
     {

@@ -1,24 +1,29 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class Food : MonoBehaviour
 {
-    private void OnTriggerStay(Collider other)
+    // Start is called before the first frame update
+    void Start()
     {
-        // Check if the object that collided with the food is the player
-        if (other.gameObject.CompareTag("Player"))
-        {
-            // Check if the player is holding down the "E" key
-            if (Input.GetKey(KeyCode.E))
-            {
-                // Get the Hunger script from the player
-                Hunger hunger = other.gameObject.GetComponent<Hunger>();
+        
+    }
 
-                // If the player has a Hunger script, add 50 units of hunger
-                if (hunger != null)
-                {
-                    hunger.Eat(50);
-                    Destroy(gameObject);
-                }
+    // Update is called once per frame
+    void Update()
+    {
+        // Проверить, нажата ли клавиша E
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            // Получить компонент Hunger игрока
+            Hunger hunger = GetComponent<Hunger>();
+
+            // Проверить, есть ли у игрока компонент Hunger
+            if (hunger != null)
+            {
+                // Увеличить голод игрока на 50
+                hunger.Eat(50);
             }
         }
     }
