@@ -11,12 +11,15 @@ public class Zombie : MonoBehaviour
     public float damage = 30;
     public float value = 100;
 
+    private float stopedD;
+
     // Start is called before the first frame update
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
         player = FindObjectOfType<PlayerController>();
         _playerHealth = player.GetComponent<PlayerHealth>();
+        stopedD = navMeshAgent.stoppingDistance;
     }
 
     public void DealDamage(float damage)
@@ -38,7 +41,7 @@ public class Zombie : MonoBehaviour
 
     private void AttackUpdate()
     {
-            if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
+            if (navMeshAgent.remainingDistance <= stopedD)
             {
                 _playerHealth.DealDamage(damage * Time.deltaTime);
             }

@@ -1340,9 +1340,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 100
-  valueRectTransform: {fileID: 0}
-  gamplayUI: {fileID: 0}
-  gameOverScreen: {fileID: 0}
+  valueRectTransform: {fileID: 4730127997912916638}
+  gamplayUI: {fileID: 7387586013927130438}
+  gameOverScreen: {fileID: 3312114654604881789}
 --- !u!114 &2392349418512994777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1356,8 +1356,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHunger: 100
-  hungerDecreaseRate: 3
-  hungerDamageRate: 2
+  hungerDecreaseRate: 1
+  hungerDamageRate: 1
   hungerText: {fileID: 1750344237144100797}
 --- !u!114 &7805310746257068619
 MonoBehaviour:
@@ -1381,7 +1381,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7967903449888213320}
   - component: {fileID: 7967903449888213322}
-  - component: {fileID: 7967903449888213321}
   m_Layer: 0
   m_Name: Flash Light
   m_TagString: Untagged
@@ -1464,19 +1463,6 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &7967903449888213321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7967903449888213319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e40083f1738c4d0459cb999cb5799a0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  flashlight: {fileID: 7967903449888213322}
 --- !u!1 &7967903450134085137
 GameObject:
   m_ObjectHideFlags: 0
