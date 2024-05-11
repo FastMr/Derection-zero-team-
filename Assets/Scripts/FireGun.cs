@@ -56,7 +56,7 @@ public class FireGun : MonoBehaviour
         }
 
         //перезарядка по кнопке
-        if (Input.GetKeyDown(KeyCode.R) && Reloading != true && Ammo < BulletMax)
+        if (Input.GetKeyDown(KeyCode.R) && Reloading != true && Bullet != BulletMax)
         {
             Reload();
         }
