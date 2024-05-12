@@ -50,10 +50,9 @@ public class Bullet : MonoBehaviour
                 // Нанести урон зомби
                 zombie.DealDamage(35);
             }
-
-            // Уничтожить пулю
-            Destroy(gameObject);
         }
+        // Уничтожить пулю
+        Destroy(gameObject);
     }
 }
 

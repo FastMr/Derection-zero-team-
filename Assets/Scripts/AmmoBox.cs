@@ -11,14 +11,14 @@ public class AmmoBox : MonoBehaviour
         // Проверить, является ли объект, который столкнулся с триггером, игроком
         if (collision.gameObject.tag == "Player")
         {
-            // Получить компонент AmmoPluseText игрока
-            AmmoPluseText ammoPluseText = collision.gameObject.GetComponent<AmmoPluseText>();
+            // Получить компонент FireGun игрока
+            FireGun fireGun = collision.gameObject.GetComponent<FireGun>();
 
             // Проверить, есть ли у игрока компонент AmmoPluseText
-            if (ammoPluseText != null)
+            if (fireGun != null)
             {
                 // Увеличить значение AmmoPluse на количество патронов
-                ammoPluseText.AmmoPluse += ammoAmount;
+                fireGun.Ammo += ammoAmount;
             }
 
             // Уничтожить ящик с патронами

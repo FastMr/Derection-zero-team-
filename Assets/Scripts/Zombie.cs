@@ -5,83 +5,23 @@ using UnityEngine.AI;
 
 public class Zombie : MonoBehaviour
 {
-    public List<Transform> patrolPoints;
-    public PlayerController player;
-    public float viewAngle;
+    NavMeshAgent navMeshAgent;
+    private PlayerHealth _playerHealth;
+    PlayerController player;
     public float damage = 30;
     public float value = 100;
 
-    private NavMeshAgent _navMeshAgent;
-    private bool _isPlayerNoticed;
-    private PlayerHealth _playerHealth;
+    private float stopedD;
 
     // Start is called before the first frame update
     void Start()
     {
-        InitComponentLinks();
-        PickNewPatrolPoint();
-    }
-    private void InitComponentLinks()
-    {
-        _navMeshAgent = GetComponent<NavMeshAgent>();
+        navMeshAgent = GetComponent<NavMeshAgent>();
+        player = FindObjectOfType<PlayerController>();
         _playerHealth = player.GetComponent<PlayerHealth>();
+        stopedD = navMeshAgent.stoppingDistance;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        NoticePlayerUpdate();
-        ChaseUpdate();
-        AttackUpdate();
-        PatrolUpdate();
-    }
-    private void PickNewPatrolPoint()
-    {
-        _navMeshAgent.destination = patrolPoints[Random.Range(0, patrolPoints.Count)].position;
-    }
-    private void NoticePlayerUpdate()
-    {
-        var direction = player.transform.position - transform.position;
-        _isPlayerNoticed = false;
-        if (Vector3.Angle(transform.forward, direction) < viewAngle)
-        {
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position + Vector3.up, direction, out hit))
-            {
-                if (hit.collider.gameObject == player.gameObject)
-                {
-                    _isPlayerNoticed = true;
-                }
-            }
-        }
-    }
-    private void ChaseUpdate()
-    {
-        if (_isPlayerNoticed)
-        {
-            _navMeshAgent.destination = player.transform.position;
-        }
-    }
-    private void PatrolUpdate()
-    {
-        if (!_isPlayerNoticed)
-        {
-            if (_navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance)
-            {
-                PickNewPatrolPoint();
-            }
-        }
-    }
-    private void AttackUpdate()
-    {
-        if (_isPlayerNoticed)
-        {
-            if (_navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance)
-            {
-                _playerHealth.DealDamage(damage * Time.deltaTime);
-            }
-        }
-    }
     public void DealDamage(float damage)
     {
 
@@ -90,5 +30,20 @@ public class Zombie : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        navMeshAgent.SetDestination(player.transform.position);
+        AttackUpdate();
+    }
+
+    private void AttackUpdate()
+    {
+            if (navMeshAgent.remainingDistance <= stopedD)
+            {
+                _playerHealth.DealDamage(damage * Time.deltaTime);
+            }
     }
 }
