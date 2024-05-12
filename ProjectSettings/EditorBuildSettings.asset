@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 99ac0ade159a3cd4fb480c982005e5d0
   - enabled: 1
+    path: Assets/Scenes/Obuchenie.unity
+    guid: ccd4adb2d7ebe784ebb2d98c1514c76e
+  - enabled: 1
     path: Assets/Scenes/PlayerController.unity
     guid: d6dac475327788e4093156750a1d90f5
   m_configObjects: {}
