@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Threading;
 
-public class ItemSpawn : MonoBehaviour
+public class FoodSpawn : MonoBehaviour
 {
     public Food ItemPrefab;
     public float TimeToSpawn = 10;
