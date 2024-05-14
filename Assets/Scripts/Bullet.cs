@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float lifetime = 10;
+    public float damage = 20;
 
     private float speed;
     private float spread;
@@ -48,7 +49,7 @@ public class Bullet : MonoBehaviour
             if (zombie != null)
             {
                 // Нанести урон зомби
-                zombie.DealDamage(35);
+                zombie.DealDamage(damage);
             }
         }
         // Уничтожить пулю
