@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class Zombie : MonoBehaviour
 {
-    NavMeshAgent navMeshAgent;
+    NavMeshAgent Agent;
     private PlayerHealth _playerHealth;
     PlayerController player;
     public float damage = 30;
@@ -16,10 +16,10 @@ public class Zombie : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        navMeshAgent = GetComponent<NavMeshAgent>();
+        Agent = GetComponent<NavMeshAgent>();
         player = FindObjectOfType<PlayerController>();
         _playerHealth = player.GetComponent<PlayerHealth>();
-        stopedD = navMeshAgent.stoppingDistance;
+        stopedD = Agent.stoppingDistance;
     }
 
     public void DealDamage(float damage)
@@ -35,15 +35,14 @@ public class Zombie : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        navMeshAgent.SetDestination(player.transform.position);
+        Agent.SetDestination(player.transform.position);
         AttackUpdate();
     }
-
     private void AttackUpdate()
     {
-            if (navMeshAgent.remainingDistance <= stopedD)
-            {
-                _playerHealth.DealDamage(damage * Time.deltaTime);
-            }
+         if (Agent.remainingDistance <= stopedD)
+         {
+             _playerHealth.DealDamage(damage * Time.deltaTime);
+         }
     }
 }
