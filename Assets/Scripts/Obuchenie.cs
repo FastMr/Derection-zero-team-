@@ -19,7 +19,7 @@ public class Obuchenie : MonoBehaviour
     
     public void LoadLevel()
     {
-        SceneManager.LoadScene("PlayerController");
+        SceneManager.LoadScene("Game");
     }
 
 }

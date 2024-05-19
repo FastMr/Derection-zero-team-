@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Auto : MonoBehaviour
 {
@@ -24,11 +25,11 @@ public class Auto : MonoBehaviour
         {
             if (KeyText.keys == 8)
             {
-                //конец игры
+                SceneManager.LoadScene("Final");
             }
             else
             {
-                
+                return;
             }
         }
     }
