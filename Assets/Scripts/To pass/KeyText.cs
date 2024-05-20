@@ -50,10 +50,11 @@ public class KeyText : MonoBehaviour
     {
         keyText.text = "Детали Авто:" + keys;
     }
+    
     private void OnTriggerExit(Collider other)
     {
         // Check if the object that exited the trigger is the player
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Key"))
         {
             // Deactivate the Eshka object
             Eshka.SetActive(false);
