@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2237,6 +2237,12 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &354001382 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9153597270920554302, guid: 9a97f830ab57cc04daec64bb054092ab,
+    type: 3}
+  m_PrefabInstance: {fileID: 7967903450248827744}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &374522608
 Mesh:
   m_ObjectHideFlags: 0
@@ -4625,6 +4631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Note: {fileID: 2099587242}
+  Eshka: {fileID: 354001382}
 --- !u!65 &594658007
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12182,7 +12189,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-7704
+  m_Name: pb_Mesh-51380
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16395,6 +16402,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1734881387}
+    - target: {fileID: 6258219264705298006, guid: 3d0306e9cf08cec4eabc64bfcc685592,
+        type: 3}
+      propertyPath: Eshka
+      value: 
+      objectReference: {fileID: 354001382}
     - target: {fileID: 6258219264705298008, guid: 3d0306e9cf08cec4eabc64bfcc685592,
         type: 3}
       propertyPath: m_RootOrder
