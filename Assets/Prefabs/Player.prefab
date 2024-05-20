@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9141103174978814658}
   - component: {fileID: 1172559468750130448}
   - component: {fileID: 8638128301625433856}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 7736473598201373838}
   - component: {fileID: 2496831654629022183}
   - component: {fileID: 4507275409061151505}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,7 +237,7 @@ GameObject:
   - component: {fileID: 8134251718421202054}
   - component: {fileID: 5500105243705375353}
   - component: {fileID: 7747279285288213492}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Note4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -312,7 +312,7 @@ GameObject:
   - component: {fileID: 637311272483815847}
   - component: {fileID: 6371905147312703451}
   - component: {fileID: 677467408632130742}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -455,7 +455,7 @@ GameObject:
   - component: {fileID: 5960615175486327004}
   - component: {fileID: 1880269693818626488}
   - component: {fileID: 2128659938851275562}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Note3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -530,7 +530,7 @@ GameObject:
   - component: {fileID: 2927285484266516596}
   - component: {fileID: 1226228206131721992}
   - component: {fileID: 6212605171163897502}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Health bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -606,7 +606,7 @@ GameObject:
   - component: {fileID: 8912197624937229447}
   - component: {fileID: 5883385033585626486}
   - component: {fileID: 3709440865857373356}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -697,7 +697,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6774412261463293374}
   - component: {fileID: 3209051097166625043}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameOverScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -749,7 +749,7 @@ GameObject:
   - component: {fileID: 7280860232358579389}
   - component: {fileID: 7154834826596688921}
   - component: {fileID: 6531471067272357913}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Note1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -822,7 +822,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5478671300082761850}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: UINOTE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -863,7 +863,7 @@ GameObject:
   - component: {fileID: 7566168986460367753}
   - component: {fileID: 2857646352365269106}
   - component: {fileID: 7274126564787182822}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BackGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -936,7 +936,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4063877200199238144}
   - component: {fileID: 7007712437157026272}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Zone Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1029,7 +1029,7 @@ GameObject:
   - component: {fileID: 3987573022681962064}
   - component: {fileID: 9167223887877454378}
   - component: {fileID: 6312145562773254983}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1170,7 +1170,7 @@ GameObject:
   - component: {fileID: 593799170054159561}
   - component: {fileID: 5573357457214836751}
   - component: {fileID: 8611004838241688779}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1263,7 +1263,7 @@ GameObject:
   - component: {fileID: 5931903512196679597}
   - component: {fileID: 8602253008440077060}
   - component: {fileID: 1504043453058928596}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1355,7 +1355,7 @@ GameObject:
   - component: {fileID: 9175628037880074141}
   - component: {fileID: 5018624848101547784}
   - component: {fileID: 7500776333782986476}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1489,7 +1489,7 @@ GameObject:
   - component: {fileID: 7302619845106648666}
   - component: {fileID: 604921455767173307}
   - component: {fileID: 5588513981178516006}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Quit to menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1618,7 +1618,7 @@ GameObject:
   - component: {fileID: 6713367271221831429}
   - component: {fileID: 2295327042111304151}
   - component: {fileID: 1448202731173363775}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1760,7 +1760,7 @@ GameObject:
   - component: {fileID: 3327919452193387859}
   - component: {fileID: 8475358966604768655}
   - component: {fileID: 3726425065074172690}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Note2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1833,7 +1833,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 451869867688402687}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1868,7 +1868,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6920506551642959329}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GamePlayUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1911,7 +1911,7 @@ GameObject:
   - component: {fileID: 959556254443396971}
   - component: {fileID: 3341777423920804563}
   - component: {fileID: 781075225532762353}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2011,7 +2011,7 @@ GameObject:
   - component: {fileID: 3644019719548066433}
   - component: {fileID: 5735548716869322428}
   - component: {fileID: 6306578427105756553}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2144,7 +2144,7 @@ GameObject:
   - component: {fileID: 807896525729931565}
   - component: {fileID: 3225953721026797243}
   - component: {fileID: 8747949300662820162}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Idiot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2277,7 +2277,7 @@ GameObject:
   - component: {fileID: 2688033158476667719}
   - component: {fileID: 2279461581089328894}
   - component: {fileID: 5765558550849649296}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2408,7 +2408,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7967903448731796594}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2676,7 +2676,7 @@ GameObject:
   - component: {fileID: 7967903449888213320}
   - component: {fileID: 7967903449888213322}
   - component: {fileID: 7967903449888213321}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Flash Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2782,7 +2782,7 @@ GameObject:
   - component: {fileID: 7967903450134085140}
   - component: {fileID: 7967903450134085139}
   - component: {fileID: 7967903450134085138}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -2865,7 +2865,7 @@ GameObject:
   - component: {fileID: 3823143355606413172}
   - component: {fileID: 5184942035144061151}
   - component: {fileID: 1750344237144100797}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GolodText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2944,7 +2944,7 @@ GameObject:
   - component: {fileID: 4110710169475832700}
   - component: {fileID: 2729632145383809398}
   - component: {fileID: 120000250926076517}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3037,7 +3037,7 @@ GameObject:
   - component: {fileID: 8178410951606265266}
   - component: {fileID: 7239563897967210127}
   - component: {fileID: 3317494200350728547}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3129,7 +3129,7 @@ GameObject:
   - component: {fileID: 4730127997912916638}
   - component: {fileID: 5147630716404294939}
   - component: {fileID: 1854100539949840741}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Value Status
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3203,7 +3203,7 @@ GameObject:
   - component: {fileID: 8777752903757044814}
   - component: {fileID: 7272349280921362528}
   - component: {fileID: 897086150589583157}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3350,7 +3350,7 @@ GameObject:
   - component: {fileID: 7007557001108791130}
   - component: {fileID: 8028444836980482413}
   - component: {fileID: 8112552021412404371}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Die text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
