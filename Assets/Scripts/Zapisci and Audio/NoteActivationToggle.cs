@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System;
 
 public class NoteActivationToggle : MonoBehaviour
 {
@@ -7,10 +6,15 @@ public class NoteActivationToggle : MonoBehaviour
     private bool _isTimeStopped = false;
     public GameObject Eshka;
 
+    private void Start()
+    {
+        
+    }
+
     private void Update()
     {
         // Check if the ESC key is pressed
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             // Deactivate the Note object
             Note.SetActive(false);
@@ -43,6 +47,7 @@ public class NoteActivationToggle : MonoBehaviour
                 {
                     // Activate the Note object
                     Note.SetActive(true);
+
 
                     // Stop time
                     _isTimeStopped = true;

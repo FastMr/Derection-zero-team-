@@ -21,6 +21,10 @@ public class FireGun : MonoBehaviour
     public float Speed = 10;
     public float Spread = 10;
 
+    public AudioSource moveSound;
+    public AudioSource moveSound2;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +42,8 @@ public class FireGun : MonoBehaviour
             Instantiate(BulletPrefab, Point.position, Point.rotation);
             Bullet -= 1;
             RateOfFire = _timeSpawn;
+            if (moveSound.isPlaying) return;
+            moveSound.Play();
         }
         RateOfFire -= Time.deltaTime;
 
@@ -69,6 +75,8 @@ public class FireGun : MonoBehaviour
         if (0 < Ammo)
         {
             Invoke("Reloaded", ReloadTime);
+            if (moveSound2.isPlaying) return;
+            moveSound2.Play();
         }
     }
     private void Reloaded()

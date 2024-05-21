@@ -2,11 +2,16 @@
 
 public class Food : MonoBehaviour
 {
+    public GameObject EshkaPrefab;
+
     private void OnTriggerStay(Collider other)
     {
         // Check if the object that collided with the food is the player
         if (other.gameObject.CompareTag("Player"))
         {
+            // Activate the Eshka object
+            EshkaPrefab.SetActive(true);
+
             // Check if the player is holding down the "E" key
             if (Input.GetKey(KeyCode.E))
             {
@@ -18,8 +23,19 @@ public class Food : MonoBehaviour
                 {
                     hunger.Eat(50);
                     Destroy(gameObject);
+                    EshkaPrefab.SetActive(false);
                 }
             }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        // Check if the object that exited the trigger is the player
+        if (other.gameObject.CompareTag("Player"))
+        {
+            // Deactivate the Eshka object
+            EshkaPrefab.SetActive(false);
         }
     }
 }

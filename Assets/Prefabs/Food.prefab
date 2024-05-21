@@ -417,7 +417,7 @@ GameObject:
   - component: {fileID: 6258219264705298010}
   - component: {fileID: 6258219264705298013}
   - component: {fileID: 6258219264705298009}
-  - component: {fileID: 6258219264705298006}
+  - component: {fileID: 1779572441036926206}
   m_Layer: 8
   m_Name: Food
   m_TagString: Food
@@ -516,7 +516,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6258219264705298006
+--- !u!114 &1779572441036926206
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -528,6 +528,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17820bc33ce14d448ad4d63b3094a5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EshkaPrefab: {fileID: 7075396521180456350, guid: 14138fd6f8651a94e8e8934c4e40c82e,
+    type: 3}
 --- !u!1 &6338822668038295006
 GameObject:
   m_ObjectHideFlags: 0
