@@ -21,7 +21,8 @@ public class FireGun : MonoBehaviour
     public float Speed = 10;
     public float Spread = 10;
 
-    public AudioSource moveSound;
+    public AudioSource shot;
+    public AudioSource shot2;
     public AudioSource moveSound2;
 
 
@@ -42,8 +43,17 @@ public class FireGun : MonoBehaviour
             Instantiate(BulletPrefab, Point.position, Point.rotation);
             Bullet -= 1;
             RateOfFire = _timeSpawn;
-            if (moveSound.isPlaying) return;
-            moveSound.Play();
+            
+            if (Random.Range(1, 3) == 1)
+            {
+                if (shot.isPlaying) return;
+                shot.Play();
+            }
+            else
+            {
+                if (shot2.isPlaying) return;
+                shot2.Play();
+            }
         }
         RateOfFire -= Time.deltaTime;
 
@@ -75,8 +85,8 @@ public class FireGun : MonoBehaviour
         if (0 < Ammo)
         {
             Invoke("Reloaded", ReloadTime);
-            if (moveSound2.isPlaying) return;
-            moveSound2.Play();
+            if (moveSound2.isPlaying) return;           
+               moveSound2.Play();           
         }
     }
     private void Reloaded()

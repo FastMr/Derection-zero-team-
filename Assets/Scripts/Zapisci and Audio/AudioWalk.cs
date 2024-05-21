@@ -11,7 +11,7 @@ public class AudioWalk : MonoBehaviour
 
     void Update()
     {
-        if ((Input.GetKey(KeyCode.W)))
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
         {
             if (moveSound.isPlaying) return;
             moveSound.Play();
@@ -20,36 +20,5 @@ public class AudioWalk : MonoBehaviour
         {
             moveSound.Stop();
         }
-
-        if ((Input.GetKey(KeyCode.A)))
-        {
-            if (moveSound.isPlaying) return;
-            moveSound.Play();
-        }
-        else
-        {
-            moveSound.Stop();
-        }
-
-        if ((Input.GetKey(KeyCode.S)))
-        {
-            if (moveSound.isPlaying) return;
-            moveSound.Play();
-        }
-        else
-        {
-            moveSound.Stop();
-        }
-
-        if ((Input.GetKey(KeyCode.D)))
-        {
-            if (moveSound.isPlaying) return;
-            moveSound.Play();
-        }
-        else
-        {
-            moveSound.Stop();
-        }
-
     }
 }

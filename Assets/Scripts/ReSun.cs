@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class ReSun : MonoBehaviour
 {
-    public float rotati;
+    public float rotati = 0.02f;
+    public float startRotati;
 
     public Transform sun;
 
     void Start()
     {
-        rotati = 0.02f;
+        sun.Rotate(new Vector3(0, startRotati, 0));
     }
 
     // Update is called once per frame
