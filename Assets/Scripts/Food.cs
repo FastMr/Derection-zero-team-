@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class Food : MonoBehaviour
 {
-    public GameObject EshkaPrefab;
+    public GameObject eshka;
 
     private void OnTriggerStay(Collider other)
     {
@@ -10,7 +11,7 @@ public class Food : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             // Activate the Eshka object
-            EshkaPrefab.SetActive(true);
+            eshka.SetActive(true);
 
             // Check if the player is holding down the "E" key
             if (Input.GetKey(KeyCode.E))
@@ -23,7 +24,7 @@ public class Food : MonoBehaviour
                 {
                     hunger.Eat(50);
                     Destroy(gameObject);
-                    EshkaPrefab.SetActive(false);
+                    eshka.SetActive(false);
                 }
             }
         }
@@ -35,7 +36,7 @@ public class Food : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             // Deactivate the Eshka object
-            EshkaPrefab.SetActive(false);
+            eshka.SetActive(false);
         }
     }
 }

@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Auto : MonoBehaviour
 {
-    public GameObject Eshka;
+    public GameObject eshka;
+
     //KeyText.keys
 
     void Start()
@@ -25,11 +26,11 @@ public class Auto : MonoBehaviour
         {
             if (KeyText.keys == 8)
             {
-                Eshka.SetActive(true);
+                eshka.SetActive(true);
                 if (Input.GetKey(KeyCode.E))
                 {
-                    SceneManager.LoadScene("ZastavkaFinala");
-                    Eshka.SetActive(false);
+                    SceneManager.LoadScene("Final");
+                    eshka.SetActive(false);
                 }
             }
             else
@@ -45,7 +46,7 @@ public class Auto : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             // Deactivate the Eshka object
-            Eshka.SetActive(false);
+            eshka.SetActive(false);
         }
     }
 }

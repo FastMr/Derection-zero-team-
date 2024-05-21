@@ -4,7 +4,7 @@ public class NoteActivationToggle : MonoBehaviour
 {
     public GameObject Note;
     private bool _isTimeStopped = false;
-    public GameObject Eshka;
+    public GameObject eshka;
 
     private void Start()
     {
@@ -29,7 +29,7 @@ public class NoteActivationToggle : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Eshka.SetActive(true);
+            eshka.SetActive(true);
 
             if (Input.GetKeyDown(KeyCode.E))
             {
@@ -63,7 +63,7 @@ public class NoteActivationToggle : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             // Deactivate the Eshka object
-            Eshka.SetActive(false);
+            eshka.SetActive(false);
         }
     }
 }

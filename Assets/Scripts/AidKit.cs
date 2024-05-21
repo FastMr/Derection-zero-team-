@@ -2,18 +2,18 @@
 
 public class AidKit : MonoBehaviour
 {
-    public GameObject Eshka;
+    public GameObject eshka;
 
     private void OnTriggerStay(Collider other)
     {
         // Check if the object that collided with the food is the player
         if (other.gameObject.CompareTag("Player"))
         {
-            Eshka.SetActive(true);
+          
 
-            // Check if the player is holding down the "E" key
-            if (Input.GetKey(KeyCode.E))
-            {
+           
+            
+            
                 // Get the PlayerHealth script from the player
                 PlayerHealth health = other.gameObject.GetComponent<PlayerHealth>();
 
@@ -22,9 +22,9 @@ public class AidKit : MonoBehaviour
                 {
                     health.AddHealth(50);
                     Destroy(gameObject);
-                    Eshka.SetActive(false);
+                    
                 }
-            }
+            
         }
     }
 
@@ -34,7 +34,7 @@ public class AidKit : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             // Deactivate the Eshka object
-            Eshka.SetActive(false);
+           
         }
     }
 }
