@@ -10,6 +10,7 @@ public class MusicPlayer : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         PlayCurrentClip();
+        audioSource.volume = 0.5f;
     }
 
     void Update()

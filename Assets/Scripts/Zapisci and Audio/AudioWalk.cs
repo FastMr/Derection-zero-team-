@@ -6,7 +6,7 @@ public class AudioWalk : MonoBehaviour
     
     void Start()
     {
-        moveSound.volume = 3.5f;
+        moveSound.volume = 4.5f;
     }
 
     void Update()

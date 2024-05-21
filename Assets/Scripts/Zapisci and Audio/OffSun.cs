@@ -2,20 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ReSun : MonoBehaviour
+public class OffSun : MonoBehaviour
 {
-    public float rotati;
+    public ReSun sun;
 
-    public Transform sun;
-
+    // Start is called before the first frame update
     void Start()
     {
-        rotati = 0.02f;
+        sun = GetComponent<ReSun>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        sun.Rotate(rotati * new Vector3(0, 1, 0));
+        
     }
 }
