@@ -7,7 +7,7 @@ public class FireGun : MonoBehaviour
     public float BulletMax = 15;
     public float Bullet = 0;
     public float Ammo = 30;
-    public float ReloadTime = 3;
+    public float ReloadTime = 2;
 
     private float BulletFull;
     private bool Reloading = false;

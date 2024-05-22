@@ -10,6 +10,11 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("Obuchenie");
     }
 
+    public void Autors()
+    {
+        SceneManager.LoadScene("Autors");
+    }
+
     public void ExitGame()
     {
         Application.Quit();

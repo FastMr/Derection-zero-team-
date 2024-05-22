@@ -31,6 +31,8 @@ public class Auto : MonoBehaviour
                 {
                     SceneManager.LoadScene("Final");
                     eshka.SetActive(false);
+                    Cursor.lockState = CursorLockMode.Confined;
+                    Cursor.visible = true;
                 }
             }
             else
