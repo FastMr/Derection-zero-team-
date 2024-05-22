@@ -861,7 +861,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0e4f120fc8acd1a4c9fc07650c21e662, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3134,7 +3134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keyText: {fileID: 7500776333782986476}
-  Eshka: {fileID: 2465220354484675253, guid: 6e13dcd38bcf55047a1e6cec2eec3f7c, type: 3}
+  Eshka: {fileID: 4982177093517697677}
 --- !u!114 &4365382639254354445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3162,6 +3162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSound: {fileID: 3459776349324121753}
+  volume: 0.3
 --- !u!1 &7967903449888213319
 GameObject:
   m_ObjectHideFlags: 0
@@ -3384,7 +3385,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 68cfcbb19f133974b9ad82f7d73d77f2, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4099,6 +4100,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Eshka
       objectReference: {fileID: 0}
+    - target: {fileID: 2465220354484675253, guid: 6e13dcd38bcf55047a1e6cec2eec3f7c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2684484309061011262, guid: 6e13dcd38bcf55047a1e6cec2eec3f7c,
         type: 3}
       propertyPath: m_Pivot.x
@@ -4206,6 +4212,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e13dcd38bcf55047a1e6cec2eec3f7c, type: 3}
+--- !u!1 &4982177093517697677 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2465220354484675253, guid: 6e13dcd38bcf55047a1e6cec2eec3f7c,
+    type: 3}
+  m_PrefabInstance: {fileID: 7427006924264751160}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &4779219924102661894 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2684484309061011262, guid: 6e13dcd38bcf55047a1e6cec2eec3f7c,

@@ -5,12 +5,13 @@ public class MusicPlayer : MonoBehaviour
     public AudioClip[] musicClips;
     private AudioSource audioSource;
     private int currentClipIndex = 0;
+    public float volume = 0.1f;
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
         PlayCurrentClip();
-        audioSource.volume = 0.4f;
+        audioSource.volume = volume;
     }
 
     void Update()

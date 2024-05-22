@@ -3,10 +3,12 @@
 public class AudioWalk : MonoBehaviour
 {
     public AudioSource moveSound;
-    
+    public float volume = 0.4f;
+
+
     void Start()
     {
-        moveSound.volume = 4.5f;
+        moveSound.volume = volume;
     }
 
     void Update()
