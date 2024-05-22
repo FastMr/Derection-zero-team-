@@ -7,7 +7,7 @@ using TMPro;
 
 public class KeyText : MonoBehaviour
 {
-    public static int keys;
+    public static int keys = 0;
     public TextMeshProUGUI keyText;
     public GameObject Eshka;
 
