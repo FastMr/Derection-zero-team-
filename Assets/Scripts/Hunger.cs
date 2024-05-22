@@ -23,7 +23,7 @@ public class Hunger : MonoBehaviour
         hunger -= hungerDecreaseRate * Time.deltaTime;
 
         // Обновить текст голода
-        hungerText.text = "Голод: " + hunger.ToString("F0");
+        hungerText.text = hunger.ToString("F0");
 
         // Проверить, достиг ли голод нуля
         if (hunger <= 0)

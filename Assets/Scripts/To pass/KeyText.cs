@@ -48,7 +48,7 @@ public class KeyText : MonoBehaviour
 
     void UpdateKeyText()
     {
-        keyText.text = "Детали Авто:" + keys;
+        keyText.text = "" + keys;
     }
     
     private void OnTriggerExit(Collider other)
