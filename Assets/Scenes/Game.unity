@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -19557,6 +19557,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie
       objectReference: {fileID: 0}
+    - target: {fileID: 492851551465120525, guid: 4ae6a71739ecdbd46a4699310eb8e6d2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 492851551465120626, guid: 4ae6a71739ecdbd46a4699310eb8e6d2,
         type: 3}
       propertyPath: m_RootOrder
@@ -20424,6 +20429,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie (Spawner)
       objectReference: {fileID: 0}
+    - target: {fileID: 7789079780254657313, guid: bfe6a4b1731f6e94295e89fc34f8c60f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7789079780254657374, guid: bfe6a4b1731f6e94295e89fc34f8c60f,
         type: 3}
       propertyPath: m_RootOrder
@@ -20561,6 +20571,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Zombie (mini)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281590915753395730, guid: 43079134573ce6d43bc18b2cbfb835b8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6281590915753395821, guid: 43079134573ce6d43bc18b2cbfb835b8,
         type: 3}

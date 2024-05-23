@@ -7,14 +7,14 @@ using TMPro;
 
 public class KeyText : MonoBehaviour
 {
-    public static int keys = 0;
+    public static int keys;
     public TextMeshProUGUI keyText;
     public GameObject Eshka;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        keys = 0;
     }
 
     // Update is called once per frame
